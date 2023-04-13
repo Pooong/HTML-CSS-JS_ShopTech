@@ -1,0 +1,228 @@
+body{
+    background:#eee;
+}
+*{
+    user-select: none;  
+}
+main{
+    position: relative;
+    width:60%;
+    background:white;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.302);
+    height: 100vh;
+    overflow: hidden;
+}
+.headline{
+    display:flex;
+    align-items: center;
+    font-size: 40px ;
+    font-weight: 700;
+    gap:20px;
+    width:100%;
+    color:white;
+    background:linear-gradient(90deg,#7C04CC,white);
+    padding:10px;
+}
+.headline .logo{
+    width:80px;
+}
+.main-body-input{
+    border: 1px solid #7C04CC;
+    width:80%;
+    background:#7c04cc10;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    padding:30px;
+}
+.list-input{
+    padding-inline:10%;
+    display:flex;
+    flex-direction: column;
+    width:80%;
+}
+.main-body-input h4{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color:#3b0360;
+    padding-bottom:30px;
+}
+.input{
+    height:40px;
+    margin-bottom: 30px;
+    position:relative;
+    border-bottom:1px solid #3b0360a1;
+}
+input{
+    border:none;
+    padding-left:10px;
+    width:100%;
+    height:100%;
+    outline: none;
+    background:transparent;
+    font-size: 20px;
+    color:#24023a;
+}
+span{
+    height:3px;
+    background:#4f0680;
+    display:inline-block;
+    width:0%;
+    position:absolute;
+    transition: .4s;
+    bottom:-1.5px;
+    left:0;
+}
+input:focus~span{
+    width:100%;
+    background:#8B22D2;
+}
+.btn{
+    margin-top: 20px;
+    background:#4f0680;
+    cursor: pointer;
+    color:white;
+    padding:10px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    transition: .3s;
+
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+.btn:active{
+    opacity: .7;
+}
+.text{
+    font-size: 13px;
+    color:#24023a92;
+    width :100%;
+    text-align: center;
+}
+.text a{
+    text-decoration:underline;
+}
+.text:nth-of-type(1){
+    margin-block:5px;
+    margin-top: 20px;
+}
+.main-input{
+    position: absolute;
+    top:50%;
+    left:50%;
+    background:#eee;
+    transform: translate(-50%,-50%);
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.607) , 0 0 10px 19vw rgba(238, 238, 238, 0.717);
+    padding:5%;
+    display: none;
+}
+.main-input.active{
+    display:block;
+}
+.main-input .forget{
+    margin-bottom:20px;
+    padding-left: 10px;
+    width:100%;
+    height:30px;
+}
+.main-input .btn-forget{
+    background:#6A5AF9;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    border:none;
+    transition: .2s;
+}
+.main-input button:hover{
+    transform: scale(1.05);
+}
+.main-input button:active{
+    opacity: .8;
+}
+.point-2{
+    background:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+    position:absolute;
+    padding:20px;
+    font-weight: 700;
+    right:0;
+    top:0;
+}
+/* .main-body-profile{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background:white;
+    top:0;
+    left:0;
+}
+.main-avatar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+.main-avatar img{
+    border:3px solid gray;
+    width: 200px ;
+    height: 200px ;
+    border-radius: 100rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.main-info{
+    margin: 20px;
+    margin-top: 10%;
+    display:flex;
+    padding-inline:10%;
+}
+.main-info input{
+    border-bottom:1px solid black;  
+    padding:5px;
+}
+.main-info .right{
+    display:flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    justify-content: center;
+}
+.main-info .left{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    justify-content:space-between ;
+}
+.main-info .left p{
+    display:flex;
+    align-items:flex-end;
+    flex-basis: 20%;
+}
+.list-btn{
+    position: absolute;
+    bottom:1%;
+    right:1%;
+}
+.list-btn .btn a{
+    padding:0;
+    font-size:15px;
+    color:white
+}
+.list-btn .btn{
+    padding:5px 10px;
+    border:none;
+}
+.list-btn .btn:nth-child(2){
+    background:gray;
+} */

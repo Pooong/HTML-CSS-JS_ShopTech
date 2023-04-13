@@ -1,0 +1,128 @@
+.main-body .headline{
+    margin-left: 10%;
+    display:flex;
+    margin-block:10px;
+    gap:10px;
+}
+body{
+    background:#eee;
+}
+.main-body .headline a{
+    opacity: .7;
+    color:gray;
+    padding-right:20px;
+}
+.main-body .headline li:nth-child(1) a{
+    color:blue;
+    border-right:1px solid white;
+    transition: .25s;
+}
+.main-body .headline li:nth-child(1) a:hover {
+    opacity: 1;
+}
+.main-body-cart{
+    padding:2%;
+    width:80%;
+    min-height:60vh;
+    border-radius: 10px;
+    background:white; 
+    position:relative;
+    margin: 2% auto;
+}
+.img-cart{
+    position:absolute;
+    width:30%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: .7;
+}
+.img-cart.active{
+    display: none ;
+}
+.list-cart .cart-items{
+    display:grid;
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+    grid-column-gap: 4%;
+    padding-top:20px;
+    background:rgba(238, 238, 238, 0.407);
+    padding:1%;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+.list-cart .cart-items img{
+    width:100%;
+    margin-top:-20px;
+    transition: .3s;
+}
+.list-cart .cart-items img:hover{
+    transform:translateY(-10%)
+}
+.mgb{
+    margin-bottom: 10px;
+}
+.list-cart .cart-items .amout{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.cart-content .name  {
+    font-size: 20px ;
+    font-weight: 700;
+}
+.cart-content .color{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+.cart-content .color span{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background:red;
+}
+.list-cart .cart-items .amout input{
+    width:30%;
+}
+.list-cart .cart-items .amout span{
+    display:flex;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.621);
+    user-select: none;
+}
+.old-price{
+    text-decoration:line-through;
+    color:rgba(0, 0, 0, 0.489);
+    font-size: 15px;
+}
+.reload{
+    position:absolute;
+}
+.main-body{
+    position: relative;
+}
+.pay-now{
+    background:red;
+    font-size: 20px;
+    font-weight: 700;
+    bottom:0;
+    right:20%;
+    position:absolute;
+    color:white;
+    padding:10px;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s;
+    display:none;
+}
+.pay-now.active{
+    display:block;
+}
+.pay-now:hover{
+    transform: scale(1.1);
+}
+.pay-now:active{
+    opacity: .5;
+}

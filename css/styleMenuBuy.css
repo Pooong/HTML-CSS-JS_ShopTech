@@ -1,0 +1,167 @@
+.background-menu-phone{
+    background:#F8F9FA;
+}
+.main-body{
+    padding-inline:10%;
+}
+.main-banner{
+    width:100%;
+}
+.main-banner .headline{
+    padding:10px 0;
+}
+.main-banner .headline a{
+    opacity: .6;
+    font-size: 18px;
+    transition: .25s;
+}
+.main-banner .headline a:hover{
+    opacity: 1;
+}
+.main-banner .headline a:nth-child(1){
+    border-right:1px solid black;
+    padding-right:20px;
+    color:blue;
+}
+.main-banner .headline a:nth-child(2){
+    padding-right:20px;
+    color:rgba(0, 0, 0, 0.541);
+    user-select: none;
+}
+.banner-left{
+    position: relative;
+}
+.body-slied-show{
+    overflow: hidden;
+    border-radius: 10px;
+    display:flex
+}
+.main-list-menu-phone{
+    margin-block:2%;
+    display:grid;
+    grid-template-columns:2fr 8fr;
+}
+
+.list-sort{
+    margin-top:7%;
+}
+.list-sort h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.list-sort .main-list{
+    padding-block:5%;
+    display: grid;
+    grid-row-gap: 10px;
+}
+.local .main-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.list-sort .main-list input{
+    width:18px;
+    height:18px;
+    border-radius: 10px;
+}
+.list-sort .main-list label{
+    padding-inline:10px;
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.637);
+}
+.body-product{
+    background:white;
+    border-radius: 10px;
+    box-shadow: #63636333 0px 2px 8px 0px;
+}
+.body-list-phone{
+    padding-inline:1%;
+    display:grid;
+}
+.body-list-phone .list-select{
+    overflow: hidden;
+    width:70%;
+    display:flex;
+    margin-bottom: 50px;
+}
+.body-list-phone .list-select span{
+    min-width: 140px;
+    font-size: 18px;
+    color :gray;
+    display: flex;
+    align-items: center;
+}
+
+.body-list-phone .list-select .select-items{
+    border: 1px solid rgba(0, 0, 0, 0.224);
+    display:flex;
+    align-items: center;
+    color:rgba(0, 0, 0, 0.555);
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-inline:0;
+    transition:.25s;
+}
+.body-list-phone .list-select .select-items:hover{
+    background:#eee;
+}
+.body-list-phone .list-select .select-items.active{
+    background:red;
+}
+
+.body-list-phone .list-product{
+    grid-template-columns: repeat(3,1fr);
+}
+.body-list-phone .list-product .product-items{
+    background:#eee;
+}
+.body-list-phone .list-product .product-items:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
+}
+.banner-accessory{
+    display:grid;
+    grid-template-columns: 7fr 3fr;
+    grid-column-gap: 2%;
+}
+.banner-accessory .banner-right{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 2%;
+}
+.banner-accessory .banner-right img{
+    width:100%;
+    border-radius: 10px;    
+}
+.banner-accessory .banner-left .body-slied-show{
+    width:100%;
+    height:100%;
+}
+.select-accessory{
+    width:100%;
+}
+.select-accessory ul{
+    width :100%;
+}
+.select-accessory ul li:hover img{
+    transition:.5s;
+}
+.select-accessory ul li:hover img{
+    transform: translateY(-4%);
+}
+.list-accessory{
+    padding:0;
+}
+.list-accessory .title{
+    color:rgb(168, 10, 10);
+}
+.list-accessory .product-items{
+    background:#eee;
+}
+.button-accessory{
+    left:0;
+    padding-inline:2%;   
+}
+.button-accessory button{
+    width:100%;
+}
